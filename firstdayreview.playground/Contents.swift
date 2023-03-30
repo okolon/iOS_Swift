@@ -38,7 +38,7 @@ func check() {
 
 let kebab = ["King Kebab", "Mo's Kebab", "Shawarma Palace"]
 
-print(kebab[2].)
+print(kebab[2].count)
 
 for item in kebab {
     print(item)
