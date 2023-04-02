@@ -9,7 +9,7 @@ enum Cuisines: CaseIterable {
     case mexican
     case carribean
     case italian
-    
+// function giving the enums values.
     func whichFood() -> String{
         switch self{
             
@@ -39,8 +39,31 @@ for munch in Cuisines.allCases {
 
 //Raw value Enum
 
-enum KebabMenu:String, CaseIterable {
-    case sides = "Chips, Samosas, Popcorn chicken"
-    case mains = "Shawarma, Chicken Kebab, Burger and Chips"
-    case drinks = "Fanta, Water, Coke, Rio, Ting"
+enum ClosestShop:String, CaseIterable {
+    case kingKebab = "0.7miles away"
+    case perfectChicken = "0.3miles away"
+    case authenticGrill = "0.1miles away"
 }
+
+
+func foodLocator(shop: ClosestShop) -> String
+{
+    return shop.rawValue
+}
+
+foodLocator(shop: .kingKebab)
+
+//associatited type enum
+
+enum kebabPrices{
+    case expensive(price: Int)
+    case notBad(price: Int)
+    case cheap(price: Int)
+}
+
+func getKebabPrice(for option: kebabPrices) {
+    switch option {
+    case .expensive(price: let price) where >=
+    }
+}
+
