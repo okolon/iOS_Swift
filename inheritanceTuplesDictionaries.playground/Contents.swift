@@ -47,5 +47,5 @@ class Chinese: Cuisine {
 
 let goldenD = Chinese(name: "Golden Dragon", rating: 4.59, avgPrice: 5.90)
 
-print(goldenD.avgPrice)
+print(goldenD.type)
 
