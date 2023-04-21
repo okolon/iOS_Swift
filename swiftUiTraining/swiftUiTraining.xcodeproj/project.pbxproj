@@ -14,6 +14,15 @@
 		10B3BBC029F1A81A00F61BDC /* swiftUiTrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBBF29F1A81A00F61BDC /* swiftUiTrainingTests.swift */; };
 		10B3BBCA29F1A81A00F61BDC /* swiftUiTrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBC929F1A81A00F61BDC /* swiftUiTrainingUITests.swift */; };
 		10B3BBCC29F1A81A00F61BDC /* swiftUiTrainingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBCB29F1A81A00F61BDC /* swiftUiTrainingUITestsLaunchTests.swift */; };
+		10B3BBDA29F1FD6400F61BDC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBD929F1FD6400F61BDC /* LoginViewModel.swift */; };
+		10B3BBDC29F1FEF200F61BDC /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBDB29F1FEF200F61BDC /* DetailScreen.swift */; };
+		10B3BBDF29F20EAE00F61BDC /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBDE29F20EAE00F61BDC /* ListScreen.swift */; };
+		10B3BBE329F2139600F61BDC /* ForgotPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBE229F2139600F61BDC /* ForgotPasswordScreen.swift */; };
+		10B3BBE529F21A2600F61BDC /* CustomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBE429F21A2600F61BDC /* CustomListCell.swift */; };
+		10B3BBE729F228E700F61BDC /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBE629F228E700F61BDC /* GridView.swift */; };
+		10B3BBE929F22BE100F61BDC /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBE829F22BE100F61BDC /* GridCell.swift */; };
+		10B3BBEB29F295E100F61BDC /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBEA29F295E100F61BDC /* CustomTabBarView.swift */; };
+		10B3BBED29F2976B00F61BDC /* ImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBEC29F2976B00F61BDC /* ImageScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		10B3BBC529F1A81A00F61BDC /* swiftUiTrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftUiTrainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B3BBC929F1A81A00F61BDC /* swiftUiTrainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUiTrainingUITests.swift; sourceTree = "<group>"; };
 		10B3BBCB29F1A81A00F61BDC /* swiftUiTrainingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUiTrainingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10B3BBD929F1FD6400F61BDC /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		10B3BBDB29F1FEF200F61BDC /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		10B3BBDE29F20EAE00F61BDC /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
+		10B3BBE229F2139600F61BDC /* ForgotPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordScreen.swift; sourceTree = "<group>"; };
+		10B3BBE429F21A2600F61BDC /* CustomListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListCell.swift; sourceTree = "<group>"; };
+		10B3BBE629F228E700F61BDC /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		10B3BBE829F22BE100F61BDC /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		10B3BBEA29F295E100F61BDC /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		10B3BBEC29F2976B00F61BDC /* ImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +112,9 @@
 		10B3BBAD29F1A81700F61BDC /* swiftUiTraining */ = {
 			isa = PBXGroup;
 			children = (
+				10B3BBDD29F1FF1C00F61BDC /* View */,
+				10B3BBD829F1FCEB00F61BDC /* ViewModel */,
 				10B3BBAE29F1A81700F61BDC /* swiftUiTrainingApp.swift */,
-				10B3BBB029F1A81700F61BDC /* ContentView.swift */,
 				10B3BBB229F1A81A00F61BDC /* Assets.xcassets */,
 				10B3BBB429F1A81A00F61BDC /* Preview Content */,
 			);
@@ -125,6 +144,38 @@
 				10B3BBCB29F1A81A00F61BDC /* swiftUiTrainingUITestsLaunchTests.swift */,
 			);
 			path = swiftUiTrainingUITests;
+			sourceTree = "<group>";
+		};
+		10B3BBD829F1FCEB00F61BDC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				10B3BBD929F1FD6400F61BDC /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		10B3BBDD29F1FF1C00F61BDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10B3BBEE29F2BCE000F61BDC /* Auth */,
+				10B3BBEA29F295E100F61BDC /* CustomTabBarView.swift */,
+				10B3BBDB29F1FEF200F61BDC /* DetailScreen.swift */,
+				10B3BBDE29F20EAE00F61BDC /* ListScreen.swift */,
+				10B3BBE429F21A2600F61BDC /* CustomListCell.swift */,
+				10B3BBE629F228E700F61BDC /* GridView.swift */,
+				10B3BBE829F22BE100F61BDC /* GridCell.swift */,
+				10B3BBEC29F2976B00F61BDC /* ImageScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10B3BBEE29F2BCE000F61BDC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				10B3BBB029F1A81700F61BDC /* ContentView.swift */,
+				10B3BBE229F2139600F61BDC /* ForgotPasswordScreen.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B3BBDF29F20EAE00F61BDC /* ListScreen.swift in Sources */,
+				10B3BBEB29F295E100F61BDC /* CustomTabBarView.swift in Sources */,
+				10B3BBE329F2139600F61BDC /* ForgotPasswordScreen.swift in Sources */,
+				10B3BBE729F228E700F61BDC /* GridView.swift in Sources */,
+				10B3BBED29F2976B00F61BDC /* ImageScreen.swift in Sources */,
+				10B3BBDC29F1FEF200F61BDC /* DetailScreen.swift in Sources */,
 				10B3BBB129F1A81700F61BDC /* ContentView.swift in Sources */,
+				10B3BBE929F22BE100F61BDC /* GridCell.swift in Sources */,
 				10B3BBAF29F1A81700F61BDC /* swiftUiTrainingApp.swift in Sources */,
+				10B3BBDA29F1FD6400F61BDC /* LoginViewModel.swift in Sources */,
+				10B3BBE529F21A2600F61BDC /* CustomListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
