@@ -36,44 +36,49 @@ struct ContentView: View {
                             .font(.title3)
                             .fontWeight(.light)
                             .padding(.top, 60)
-                            .padding(.trailing, 160)
+                            .padding(.trailing, 210)
                         
-                        TextField("Email", text: $emailiD)
+                        TextField(text: $emailiD) {
+                            Text("Email")
+                                .frame(maxWidth: .infinity)
+                        }
                             .textFieldStyle(.roundedBorder)
                             .padding(.bottom, 10)
-                            .padding(.leading, 40)
-                            .padding(.trailing, 40)
+                            .padding(.leading, 15)
+                            .padding(.trailing, 15)
                         
                         Text(passwordTag)
                             .foregroundColor(.black)
                             .font(.title3)
                             .fontWeight(.light)
-                            .padding(.trailing, 195)
+                            .padding(.trailing, 245)
                         
                         SecureField("Password", text: $password)
                             .textFieldStyle(.roundedBorder)
                             .padding(.bottom, 10)
-                            .padding(.leading, 40)
-                            .padding(.trailing, 40)
+                            .padding(.leading, 15)
+                            .padding(.trailing, 15)
                         
                         Button("Forgot Password?"){
                             path.append(.forgotP)
-                        }.padding(.trailing, 130)
+                        }.padding(.trailing, 185)
                             .foregroundColor(.black)
                             .fontWeight(.semibold)
                         
-                        Button("Login") {
+                        Button {
                             if loginViewModel.validLogin(emailField: emailiD, passwordField: password) {
                                 print(emailiD)
                                 print(password)
                                 
                                 path.append(.tabBar)
-
+                                
                             }else {
                                 print("Invalid Login")
                             }
+                        } label: {
+                            Text("Login")
+                                .frame(maxWidth: .infinity)
                         }.buttonStyle(.borderedProminent)
-                            .frame(maxWidth: 150)
                             .padding()
                             .tint(.black)
                         
@@ -88,12 +93,13 @@ struct ContentView: View {
                             .padding(.leading, 50)
                         
                         NavigationLink{
-                            ForgotPasswordScreen()
+                            SignUpScreen()
                         }label: {
                             Text("Sign up here")
                         }.padding(.trailing, 50)
                             .padding(.leading, 50)
                             .foregroundColor(.white)
+                            .underline()
                             .fontWeight(.semibold)
                     }
                     Spacer()
@@ -102,9 +108,9 @@ struct ContentView: View {
                 .navigationDestination(for: Root.self) { navigate in
                     switch navigate {
                     case .forgotP:
-                        ForgotPasswordScreen()
-                    case .signUp:
                         EmptyView()
+                    case .signUp:
+                        SignUpScreen()
                     case .tabBar:
                         CustomTabBarView()
                     default:

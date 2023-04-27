@@ -20,11 +20,19 @@ struct CustomTabBarView: View {
             }
             GridView().tabItem {
                 Image(systemName: "square.grid.3x3")
-                Text("List")
+                Text("Grid")
             }
             ImageScreen().tabItem {
                 Image(systemName: "photo.fill")
-                Text("List")
+                Text("Image")
+            }
+            QuantityScreen().tabItem {
+                Image(systemName: "basket.fill")
+                Text("Shop")
+            }
+            GameScreen().tabItem {
+                Image(systemName: "gamecontroller.fill")
+                Text("Game")
             }
         }.tint(.white)
     }

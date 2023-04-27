@@ -15,6 +15,7 @@ struct ImageScreen: View {
         VStack {
             Text("Powered by:")
             AsyncImage(url: URL(string: imageURL))
+
         }
         
     }

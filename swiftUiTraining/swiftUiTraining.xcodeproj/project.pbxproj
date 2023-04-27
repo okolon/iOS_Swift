@@ -23,6 +23,10 @@
 		10B3BBE929F22BE100F61BDC /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBE829F22BE100F61BDC /* GridCell.swift */; };
 		10B3BBEB29F295E100F61BDC /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBEA29F295E100F61BDC /* CustomTabBarView.swift */; };
 		10B3BBED29F2976B00F61BDC /* ImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B3BBEC29F2976B00F61BDC /* ImageScreen.swift */; };
+		10D309BC29F4282600828A8D /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D309BB29F4282600828A8D /* SignUpScreen.swift */; };
+		10D309BE29F5B73F00828A8D /* QuantityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D309BD29F5B73F00828A8D /* QuantityScreen.swift */; };
+		10D309C029F607DB00828A8D /* CheckoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D309BF29F607DB00828A8D /* CheckoutScreen.swift */; };
+		10D309C229F6847600828A8D /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D309C129F6847600828A8D /* GameScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		10B3BBE829F22BE100F61BDC /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 		10B3BBEA29F295E100F61BDC /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		10B3BBEC29F2976B00F61BDC /* ImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScreen.swift; sourceTree = "<group>"; };
+		10D309BB29F4282600828A8D /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		10D309BD29F5B73F00828A8D /* QuantityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityScreen.swift; sourceTree = "<group>"; };
+		10D309BF29F607DB00828A8D /* CheckoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutScreen.swift; sourceTree = "<group>"; };
+		10D309C129F6847600828A8D /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,7 @@
 		10B3BBA229F1A81700F61BDC = {
 			isa = PBXGroup;
 			children = (
+				10D309C129F6847600828A8D /* GameScreen.swift */,
 				10B3BBAD29F1A81700F61BDC /* swiftUiTraining */,
 				10B3BBBE29F1A81A00F61BDC /* swiftUiTrainingTests */,
 				10B3BBC829F1A81A00F61BDC /* swiftUiTrainingUITests */,
@@ -165,6 +174,8 @@
 				10B3BBE629F228E700F61BDC /* GridView.swift */,
 				10B3BBE829F22BE100F61BDC /* GridCell.swift */,
 				10B3BBEC29F2976B00F61BDC /* ImageScreen.swift */,
+				10D309BD29F5B73F00828A8D /* QuantityScreen.swift */,
+				10D309BF29F607DB00828A8D /* CheckoutScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +185,7 @@
 			children = (
 				10B3BBB029F1A81700F61BDC /* ContentView.swift */,
 				10B3BBE229F2139600F61BDC /* ForgotPasswordScreen.swift */,
+				10D309BB29F4282600828A8D /* SignUpScreen.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -309,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B3BBDF29F20EAE00F61BDC /* ListScreen.swift in Sources */,
+				10D309C229F6847600828A8D /* GameScreen.swift in Sources */,
 				10B3BBEB29F295E100F61BDC /* CustomTabBarView.swift in Sources */,
 				10B3BBE329F2139600F61BDC /* ForgotPasswordScreen.swift in Sources */,
 				10B3BBE729F228E700F61BDC /* GridView.swift in Sources */,
@@ -317,8 +330,11 @@
 				10B3BBB129F1A81700F61BDC /* ContentView.swift in Sources */,
 				10B3BBE929F22BE100F61BDC /* GridCell.swift in Sources */,
 				10B3BBAF29F1A81700F61BDC /* swiftUiTrainingApp.swift in Sources */,
+				10D309C029F607DB00828A8D /* CheckoutScreen.swift in Sources */,
 				10B3BBDA29F1FD6400F61BDC /* LoginViewModel.swift in Sources */,
 				10B3BBE529F21A2600F61BDC /* CustomListCell.swift in Sources */,
+				10D309BC29F4282600828A8D /* SignUpScreen.swift in Sources */,
+				10D309BE29F5B73F00828A8D /* QuantityScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
