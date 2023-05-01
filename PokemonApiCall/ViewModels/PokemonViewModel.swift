@@ -8,7 +8,8 @@
 import Foundation
 
 class PokemonViewModel : ObservableObject{
-   @Published var pokeList = [Pokemon]()
+   @Published var pokeList = PokemonData(data: [], page: 0, pageSize: 0, count: 0, totalCount: 0)
+    
     
     var manager: NetworkableProtocol
     
@@ -23,9 +24,7 @@ class PokemonViewModel : ObservableObject{
            let data = try await self.manager.getDataFromApi(url: url)
             let pokemondata = try JSONDecoder().decode(PokemonData.self, from: data)
             DispatchQueue.main.async {
-                self.pokeList = pokemondata.results.map { pokemonEntity in
-                    Pokemon(name: pokemonEntity.name, url: pokemonEntity.url)
-            }
+                self.pokeList = pokemondata
             }
             print(pokemondata)
         }catch let error{

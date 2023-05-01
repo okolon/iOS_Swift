@@ -41,7 +41,7 @@ struct KeyChainScreen: View {
                                   kSecReturnData as String: kCFBooleanTrue!,
                                   kSecMatchLimit as String: kSecMatchLimitOne]
             
-        var dataTypeRef: AnyObject? = nil // reference for the data
+        var dataTypeRef: AnyObject? // reference for the data
         let status:OSStatus = SecItemCopyMatching(query as Dictionary as CFDictionary, &dataTypeRef) //stores data in variable
         if status == noErr {
             if let data = dataTypeRef as? Data, let string = String(data: data, encoding: .utf8){

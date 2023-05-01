@@ -7,23 +7,19 @@
 
 import Foundation
 
-struct PokemonData: Decodable {
-    let count: Int
-    let next, previous: String?
-    let results: [PokemonEntity]
+struct PokemonData: Codable {
+    let data: [PokemonEntity]
+    let page, pageSize, count, totalCount: Int
 }
 
-struct PokemonEntity: Decodable {
-    
+
+struct PokemonEntity: Codable {
     let name: String
-    let url: String
+    let evolvesFrom: String?
+    let images:    CardImages
+    let evolvesTo: [String]?
 }
 
-
-struct Pokemon: Decodable, Identifiable {
-    var id = UUID()
-    
-    let name: String
-    let url: String
+struct CardImages: Codable {
+    let small, large: String
 }
-

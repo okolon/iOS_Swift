@@ -96,9 +96,8 @@
 		10D309C329F6B5DD00828A8D = {
 			isa = PBXGroup;
 			children = (
-				10D30A0E29F7EA4500828A8D /* CustomListCell.swift */,
+				10D30B4129FEE72E00828A8D /* View */,
 				10D30A0929F7D93E00828A8D /* Network */,
-				10D30A0529F7D37100828A8D /* DetailScreen.swift */,
 				10D30A0229F7CED400828A8D /* ViewModels */,
 				10D309FB29F6B69B00828A8D /* Model */,
 				10D309CE29F6B5DD00828A8D /* PokemonApiCall */,
@@ -125,7 +124,6 @@
 				10D309D129F6B5DD00828A8D /* ContentView.swift */,
 				10D30A8E29FA8D1700828A8D /* KeyChainScreen.swift */,
 				10D30A9029FA8E7D00828A8D /* MyPropertyList.plist */,
-				10D309FE29F7CC1A00828A8D /* ListView.swift */,
 				10D30A8B29FA76C800828A8D /* OfflineStorage.xcdatamodeld */,
 				10D309D329F6B5E000828A8D /* Assets.xcassets */,
 				10D309D529F6B5E000828A8D /* Preview Content */,
@@ -182,6 +180,16 @@
 				10D30A0C29F7DA0B00828A8D /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		10D30B4129FEE72E00828A8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10D30A0529F7D37100828A8D /* DetailScreen.swift */,
+				10D309FE29F7CC1A00828A8D /* ListView.swift */,
+				10D30A0E29F7EA4500828A8D /* CustomListCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

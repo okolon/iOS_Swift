@@ -16,12 +16,9 @@ struct ListView: View {
     var body: some View {
         NavigationStack{
             VStack{
-//                    .font(.title)
-//                    .fontWeight(.bold)
-//                    .padding(.bottom, 100)
-                List(pokemonViewModel.pokeList){ pokemon in
+                List(pokemonViewModel.pokeList.data, id: \.name){ pokemon in
                     NavigationLink {
-                        DetailScreen()
+                        DetailScreen(pokemon: pokemon)
                     } label: {
                         CustomListCell(thing: pokemon.name)
                     }
