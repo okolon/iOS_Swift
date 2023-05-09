@@ -7,6 +7,89 @@
 
 import SwiftUI
 import CoreData
+import FirebaseAnalytics
+
+struct ContentView: View {
+    
+    @State private var isShowingDestination = false
+    
+    var body: some View {
+        NavigationStack{
+            TabView {
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(Color.init(red: 246 / 255, green: 117 / 255, blue: 113 / 255))
+                    .ignoresSafeArea()
+                    .overlay (
+                        VStack {
+                            Text("Welcome to my PokeDex")
+                                .font(.title)
+                                .fontWeight(.heavy)
+                                .padding(.bottom, 40)
+                                .foregroundColor(.white)
+                            Text("Swipe through for more")
+                                .foregroundColor(.white)
+                        }
+                    )
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(Color.init(red: 246 / 255, green: 117 / 255, blue: 113 / 255))
+                    .ignoresSafeArea()
+                    .overlay (
+                        VStack {
+                            Text("Demonstrates the use of Core Data")
+                                .font(.title)
+                                .fontWeight(.heavy)
+                                .padding(.bottom, 40)
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.center)
+                            Text("Click each cell for more information on each Pokemon")
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.center)
+                                .padding(.bottom, 70)
+                            Image(systemName: "arrow.right.circle.fill")
+                                .resizable()
+                                .frame(maxWidth: 50, maxHeight: 50)
+                                .foregroundColor(.white)
+                        }
+                    )
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(Color.init(red: 246 / 255, green: 117 / 255, blue: 113 / 255))
+                    .ignoresSafeArea()
+                    .overlay (
+                        VStack {
+                            Text("That's all!")
+                                .font(.title)
+                                .fontWeight(.heavy)
+                                .padding(.bottom, 40)
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.center)
+                            Text("Enjoy.")
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.center)
+                                .padding(.bottom, 60)
+                            Button {
+                                self.isShowingDestination.toggle()
+                                Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+                                  AnalyticsParameterItemID: "id-\("Pokemon")",
+                                  AnalyticsParameterItemName: "Pokemon",
+                                  AnalyticsParameterContentType: "cont",
+                                ])
+                            } label: {
+                                Text("Done")
+                                    .frame(maxWidth: 50)
+                            }.buttonStyle(.borderedProminent)
+                                .padding()
+                                .foregroundColor(.black)
+                                .tint(.white)
+                                .background(
+                                                NavigationLink(destination: ListView(), isActive: $isShowingDestination) {
+                                                    EmptyView()
+                                                })
+                        })
+            }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+        }
+        
+    }
+}
 
 //struct ContentView: View {
 //    @Environment(\.managedObjectContext) private var viewContext
@@ -73,7 +156,7 @@ import CoreData
 //        }
 //    }
 //}
-//
+
 //private let itemFormatter: DateFormatter = {
 //    let formatter = DateFormatter()
 //    formatter.dateStyle = .short
@@ -81,8 +164,8 @@ import CoreData
 //    return formatter
 //}()
 //
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
+}

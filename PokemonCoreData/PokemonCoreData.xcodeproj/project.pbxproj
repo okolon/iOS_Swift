@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		108974222A05042F00228D02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 108974212A05042F00228D02 /* GoogleService-Info.plist */; };
+		108974232A05045300228D02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 108974212A05042F00228D02 /* GoogleService-Info.plist */; };
+		108974242A05045400228D02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 108974212A05042F00228D02 /* GoogleService-Info.plist */; };
+		108974282A05129B00228D02 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 108974272A05129B00228D02 /* FirebaseAnalytics */; };
+		1089742A2A05129B00228D02 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 108974292A05129B00228D02 /* FirebaseCrashlytics */; };
 		10D30B6329FEEA9A00828A8D /* PokemonCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D30B6229FEEA9A00828A8D /* PokemonCoreDataApp.swift */; };
 		10D30B6529FEEA9A00828A8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D30B6429FEEA9A00828A8D /* ContentView.swift */; };
 		10D30B6729FEEA9C00828A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D30B6629FEEA9C00828A8D /* Assets.xcassets */; };
@@ -24,6 +29,8 @@
 		10D30BA329FEED6B00828A8D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D30B9B29FEED6B00828A8D /* NetworkManager.swift */; };
 		10D30BA429FEED6B00828A8D /* NetworkableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D30B9C29FEED6B00828A8D /* NetworkableProtocol.swift */; };
 		10D30BA729FEF70200828A8D /* PokemonCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10D30BA529FEF70200828A8D /* PokemonCoreData.xcdatamodeld */; };
+		10D30BAA2A0086CE00828A8D /* CoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D30BA92A0086CE00828A8D /* CoreDataProtocol.swift */; };
+		10D30BAC2A0087A400828A8D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D30BAB2A0087A400828A8D /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		108974212A05042F00228D02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10D30B5F29FEEA9A00828A8D /* PokemonCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D30B6229FEEA9A00828A8D /* PokemonCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCoreDataApp.swift; sourceTree = "<group>"; };
 		10D30B6429FEEA9A00828A8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +72,9 @@
 		10D30B9B29FEED6B00828A8D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		10D30B9C29FEED6B00828A8D /* NetworkableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkableProtocol.swift; sourceTree = "<group>"; };
 		10D30BA629FEF70200828A8D /* PokemonCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PokemonCoreData.xcdatamodel; sourceTree = "<group>"; };
+		10D30BA92A0086CE00828A8D /* CoreDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProtocol.swift; sourceTree = "<group>"; };
+		10D30BAB2A0087A400828A8D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		10D30BAD2A01392F00828A8D /* PokemonCoreData 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PokemonCoreData 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108974282A05129B00228D02 /* FirebaseAnalytics in Frameworks */,
+				1089742A2A05129B00228D02 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +127,8 @@
 		10D30B6129FEEA9A00828A8D /* PokemonCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				108974212A05042F00228D02 /* GoogleService-Info.plist */,
+				10D30BA82A00810000828A8D /* CoreData */,
 				10D30B9129FEED6B00828A8D /* Model */,
 				10D30B9A29FEED6B00828A8D /* Network */,
 				10D30B9429FEED6B00828A8D /* View */,
@@ -189,6 +204,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		10D30BA82A00810000828A8D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				10D30BA92A0086CE00828A8D /* CoreDataProtocol.swift */,
+				10D30BAB2A0087A400828A8D /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,12 +223,17 @@
 				10D30B5B29FEEA9A00828A8D /* Sources */,
 				10D30B5C29FEEA9A00828A8D /* Frameworks */,
 				10D30B5D29FEEA9A00828A8D /* Resources */,
+				1089742B2A0522A600228D02 /* Crashlytics */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PokemonCoreData;
+			packageProductDependencies = (
+				108974272A05129B00228D02 /* FirebaseAnalytics */,
+				108974292A05129B00228D02 /* FirebaseCrashlytics */,
+			);
 			productName = PokemonCoreData;
 			productReference = 10D30B5F29FEEA9A00828A8D /* PokemonCoreData.app */;
 			productType = "com.apple.product-type.application";
@@ -277,6 +306,9 @@
 				Base,
 			);
 			mainGroup = 10D30B5629FEEA9A00828A8D;
+			packageReferences = (
+				108974262A05129B00228D02 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 10D30B6029FEEA9A00828A8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,6 +327,7 @@
 			files = (
 				10D30B6A29FEEA9C00828A8D /* Preview Assets.xcassets in Resources */,
 				10D30B6729FEEA9C00828A8D /* Assets.xcassets in Resources */,
+				108974222A05042F00228D02 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108974232A05045300228D02 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,10 +343,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108974242A05045400228D02 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1089742B2A0522A600228D02 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10D30B5B29FEEA9A00828A8D /* Sources */ = {
@@ -330,6 +388,8 @@
 				10D30BA229FEED6B00828A8D /* PokemonViewModel.swift in Sources */,
 				10D30B9E29FEED6B00828A8D /* ApiEndPoint.swift in Sources */,
 				10D30B9F29FEED6B00828A8D /* CustomListCell.swift in Sources */,
+				10D30BAA2A0086CE00828A8D /* CoreDataProtocol.swift in Sources */,
+				10D30BAC2A0087A400828A8D /* CoreDataManager.swift in Sources */,
 				10D30BA129FEED6B00828A8D /* DetailScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +548,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"PokemonCoreData/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -650,13 +711,38 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		108974262A05129B00228D02 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		108974272A05129B00228D02 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 108974262A05129B00228D02 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		108974292A05129B00228D02 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 108974262A05129B00228D02 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
 		10D30BA529FEF70200828A8D /* PokemonCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				10D30BAD2A01392F00828A8D /* PokemonCoreData 2.xcdatamodel */,
 				10D30BA629FEF70200828A8D /* PokemonCoreData.xcdatamodel */,
 			);
-			currentVersion = 10D30BA629FEF70200828A8D /* PokemonCoreData.xcdatamodel */;
+			currentVersion = 10D30BAD2A01392F00828A8D /* PokemonCoreData 2.xcdatamodel */;
 			path = PokemonCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

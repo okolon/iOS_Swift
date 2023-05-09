@@ -96,10 +96,6 @@
 		10D309C329F6B5DD00828A8D = {
 			isa = PBXGroup;
 			children = (
-				10D30B4129FEE72E00828A8D /* View */,
-				10D30A0929F7D93E00828A8D /* Network */,
-				10D30A0229F7CED400828A8D /* ViewModels */,
-				10D309FB29F6B69B00828A8D /* Model */,
 				10D309CE29F6B5DD00828A8D /* PokemonApiCall */,
 				10D309DF29F6B5E000828A8D /* PokemonApiCallTests */,
 				10D309E929F6B5E000828A8D /* PokemonApiCallUITests */,
@@ -120,6 +116,10 @@
 		10D309CE29F6B5DD00828A8D /* PokemonApiCall */ = {
 			isa = PBXGroup;
 			children = (
+				10D30B4129FEE72E00828A8D /* View */,
+				10D30A0929F7D93E00828A8D /* Network */,
+				10D30A0229F7CED400828A8D /* ViewModels */,
+				10D309FB29F6B69B00828A8D /* Model */,
 				10D309CF29F6B5DD00828A8D /* PokemonApiCallApp.swift */,
 				10D309D129F6B5DD00828A8D /* ContentView.swift */,
 				10D30A8E29FA8D1700828A8D /* KeyChainScreen.swift */,

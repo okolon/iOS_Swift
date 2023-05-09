@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22E252" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PokemonImageEntity" representedClassName="PokemonImageEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="large" optional="YES" attributeType="String"/>
+        <attribute name="small" optional="YES" attributeType="String"/>
+        <relationship name="main" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonModelEntity" inverseName="images" inverseEntity="PokemonModelEntity"/>
+    </entity>
+    <entity name="PokemonModelEntity" representedClassName="PokemonModelEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="evolvesFrom" optional="YES" attributeType="String"/>
+        <attribute name="evolvesTo" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="images" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonImageEntity" inverseName="main" inverseEntity="PokemonImageEntity"/>
+    </entity>
+</model>
