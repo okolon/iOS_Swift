@@ -24,7 +24,7 @@ struct ListView: View {
                         }
                         List(planetViewModel.filteredPlanetList){
                                 planet in NavigationLink {
-                                    DetailsView(planetName: planet.name)
+                                    DetailsView(planetName: planet.name, planetDiameter: planet.diameter, planetClimate: planet.climate, planetGravity: planet.gravity, planetPopulation: planet.population)
                                 } label: {
                                     CustomCell(labelOne: planet.name)
                                 }

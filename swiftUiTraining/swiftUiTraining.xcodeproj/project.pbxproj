@@ -27,6 +27,8 @@
 		10D309BE29F5B73F00828A8D /* QuantityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D309BD29F5B73F00828A8D /* QuantityScreen.swift */; };
 		10D309C029F607DB00828A8D /* CheckoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D309BF29F607DB00828A8D /* CheckoutScreen.swift */; };
 		10D309C229F6847600828A8D /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D309C129F6847600828A8D /* GameScreen.swift */; };
+		10DB056E2A0CFF71000D2E03 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DB056D2A0CFF71000D2E03 /* Credentials.swift */; };
+		10DB05702A0CFF9B000D2E03 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DB056F2A0CFF9B000D2E03 /* Authentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		10D309BD29F5B73F00828A8D /* QuantityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityScreen.swift; sourceTree = "<group>"; };
 		10D309BF29F607DB00828A8D /* CheckoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutScreen.swift; sourceTree = "<group>"; };
 		10D309C129F6847600828A8D /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
+		10DB056D2A0CFF71000D2E03 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		10DB056F2A0CFF9B000D2E03 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,6 @@
 		10B3BBA229F1A81700F61BDC = {
 			isa = PBXGroup;
 			children = (
-				10D309C129F6847600828A8D /* GameScreen.swift */,
 				10B3BBAD29F1A81700F61BDC /* swiftUiTraining */,
 				10B3BBBE29F1A81A00F61BDC /* swiftUiTrainingTests */,
 				10B3BBC829F1A81A00F61BDC /* swiftUiTrainingUITests */,
@@ -121,6 +124,7 @@
 		10B3BBAD29F1A81700F61BDC /* swiftUiTraining */ = {
 			isa = PBXGroup;
 			children = (
+				10DB056C2A0CFF5E000D2E03 /* Models */,
 				10B3BBDD29F1FF1C00F61BDC /* View */,
 				10B3BBD829F1FCEB00F61BDC /* ViewModel */,
 				10B3BBAE29F1A81700F61BDC /* swiftUiTrainingApp.swift */,
@@ -166,6 +170,7 @@
 		10B3BBDD29F1FF1C00F61BDC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				10D309C129F6847600828A8D /* GameScreen.swift */,
 				10B3BBEE29F2BCE000F61BDC /* Auth */,
 				10B3BBEA29F295E100F61BDC /* CustomTabBarView.swift */,
 				10B3BBDB29F1FEF200F61BDC /* DetailScreen.swift */,
@@ -188,6 +193,15 @@
 				10D309BB29F4282600828A8D /* SignUpScreen.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		10DB056C2A0CFF5E000D2E03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10DB056D2A0CFF71000D2E03 /* Credentials.swift */,
+				10DB056F2A0CFF9B000D2E03 /* Authentication.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +342,10 @@
 				10B3BBED29F2976B00F61BDC /* ImageScreen.swift in Sources */,
 				10B3BBDC29F1FEF200F61BDC /* DetailScreen.swift in Sources */,
 				10B3BBB129F1A81700F61BDC /* ContentView.swift in Sources */,
+				10DB05702A0CFF9B000D2E03 /* Authentication.swift in Sources */,
 				10B3BBE929F22BE100F61BDC /* GridCell.swift in Sources */,
 				10B3BBAF29F1A81700F61BDC /* swiftUiTrainingApp.swift in Sources */,
+				10DB056E2A0CFF71000D2E03 /* Credentials.swift in Sources */,
 				10D309C029F607DB00828A8D /* CheckoutScreen.swift in Sources */,
 				10B3BBDA29F1FD6400F61BDC /* LoginViewModel.swift in Sources */,
 				10B3BBE529F21A2600F61BDC /* CustomListCell.swift in Sources */,
@@ -495,6 +511,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUiTraining/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -523,6 +540,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUiTraining/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

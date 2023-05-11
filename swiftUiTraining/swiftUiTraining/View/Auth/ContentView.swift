@@ -65,12 +65,30 @@ struct ContentView: View {
                             .foregroundColor(.black)
                             .fontWeight(.semibold)
                         
+                        if loginViewModel.biometricType() != .none {
+                            Button {
+                                loginViewModel.authenticationUser(email: emailiD, password: password) {result in
+                                    switch result {
+                                    case .success(_):
+                                        print("Successful login")
+                                    case .failure(_):
+                                        print("Login Failed")
+                                    }
+                                }
+                            } label: {
+                                Image(systemName: "faceid")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .foregroundColor(Color .white)
+                            }
+                        }
+                        
                         Button {
-                            if loginViewModel.validLogin(emailField: emailiD, passwordField: password) {
-                                print(emailiD)
-                                print(password)
-                                
-                                path.append(.tabBar)
+                                if loginViewModel.validLogin(emailField: emailiD, passwordField: password) {
+                                    print(emailiD)
+                                    print(password)
+                                    
+                                    path.append(.tabBar)
                                 
                             }else {
                                 print("Invalid Login")

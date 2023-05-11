@@ -10,7 +10,7 @@ import Foundation
 class UserProfile: ObservableObject {
     static let shared = UserProfile()
 
-    @Published var name = ""
+    @Published var name = "James"
     @Published var age = 0
     @Published var favCuisine = ""
 }

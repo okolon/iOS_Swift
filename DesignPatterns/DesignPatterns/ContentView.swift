@@ -9,9 +9,7 @@ import SwiftUI
 import Foundation
 
 struct ContentView: View {
-    
-    var users: UserProfile
-    
+        
     let foodSpots: NewRestauarants
 
 //    init(foodSpots: NewRestauarants) {
@@ -20,9 +18,9 @@ struct ContentView: View {
 //
     var body: some View {
         VStack {
-            Text("Name: \(users.name)")
-            Text("Age: \(users.age)")
-            Text("Favourite food: \(users.favCuisine)")
+            Text("Name: \(UserProfile.shared.name)")
+            Text("Age: \(UserProfile.shared.age)")
+            Text("Favourite food: \(UserProfile.shared.favCuisine)")
             
             Text("Welcome to our restaurant!")
                             .font(.title)
