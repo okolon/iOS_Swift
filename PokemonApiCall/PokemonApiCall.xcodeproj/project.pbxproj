@@ -25,6 +25,11 @@
 		10D30A8D29FA76C800828A8D /* OfflineStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10D30A8B29FA76C800828A8D /* OfflineStorage.xcdatamodeld */; };
 		10D30A8F29FA8D1700828A8D /* KeyChainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D30A8E29FA8D1700828A8D /* KeyChainScreen.swift */; };
 		10D30A9129FA8E7D00828A8D /* MyPropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10D30A9029FA8E7D00828A8D /* MyPropertyList.plist */; };
+		10DB05AE2A1237FE000D2E03 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 10DB05AD2A1237FE000D2E03 /* Quick */; };
+		10DB05B12A123B65000D2E03 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 10DB05B02A123B65000D2E03 /* Nimble */; };
+		10DB05B52A123CD6000D2E03 /* ViewModelBDD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DB05B42A123CD6000D2E03 /* ViewModelBDD.swift */; };
+		10DB05B72A124520000D2E03 /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DB05B62A124520000D2E03 /* FakeNetworkManager.swift */; };
+		10DB05B92A124FE0000D2E03 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DB05B82A124FE0000D2E03 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,9 @@
 		10D30A8C29FA76C800828A8D /* OfflineStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OfflineStorage.xcdatamodel; sourceTree = "<group>"; };
 		10D30A8E29FA8D1700828A8D /* KeyChainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainScreen.swift; sourceTree = "<group>"; };
 		10D30A9029FA8E7D00828A8D /* MyPropertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MyPropertyList.plist; sourceTree = "<group>"; };
+		10DB05B42A123CD6000D2E03 /* ViewModelBDD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBDD.swift; sourceTree = "<group>"; };
+		10DB05B62A124520000D2E03 /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		10DB05B82A124FE0000D2E03 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10DB05AE2A1237FE000D2E03 /* Quick in Frameworks */,
+				10DB05B12A123B65000D2E03 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				10D309E029F6B5E000828A8D /* PokemonApiCallTests.swift */,
+				10DB05B42A123CD6000D2E03 /* ViewModelBDD.swift */,
+				10DB05B62A124520000D2E03 /* FakeNetworkManager.swift */,
 			);
 			path = PokemonApiCallTests;
 			sourceTree = "<group>";
@@ -178,6 +190,7 @@
 			children = (
 				10D30A0A29F7D97800828A8D /* NetworkableProtocol.swift */,
 				10D30A0C29F7DA0B00828A8D /* NetworkManager.swift */,
+				10DB05B82A124FE0000D2E03 /* NetworkError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -226,6 +239,10 @@
 				10D309DE29F6B5E000828A8D /* PBXTargetDependency */,
 			);
 			name = PokemonApiCallTests;
+			packageProductDependencies = (
+				10DB05AD2A1237FE000D2E03 /* Quick */,
+				10DB05B02A123B65000D2E03 /* Nimble */,
+			);
 			productName = PokemonApiCallTests;
 			productReference = 10D309DC29F6B5E000828A8D /* PokemonApiCallTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -280,6 +297,10 @@
 				Base,
 			);
 			mainGroup = 10D309C329F6B5DD00828A8D;
+			packageReferences = (
+				10DB05AC2A1237FE000D2E03 /* XCRemoteSwiftPackageReference "Quick" */,
+				10DB05AF2A123B65000D2E03 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = 10D309CD29F6B5DD00828A8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -333,6 +354,7 @@
 				10D30A8D29FA76C800828A8D /* OfflineStorage.xcdatamodeld in Sources */,
 				10D30A0F29F7EA4500828A8D /* CustomListCell.swift in Sources */,
 				10D309D229F6B5DD00828A8D /* ContentView.swift in Sources */,
+				10DB05B92A124FE0000D2E03 /* NetworkError.swift in Sources */,
 				10D309FD29F6B8D400828A8D /* PokemonData.swift in Sources */,
 				10D309D029F6B5DD00828A8D /* PokemonApiCallApp.swift in Sources */,
 			);
@@ -343,6 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D309E129F6B5E000828A8D /* PokemonApiCallTests.swift in Sources */,
+				10DB05B52A123CD6000D2E03 /* ViewModelBDD.swift in Sources */,
+				10DB05B72A124520000D2E03 /* FakeNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +677,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10DB05AC2A1237FE000D2E03 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		10DB05AF2A123B65000D2E03 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10DB05AD2A1237FE000D2E03 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10DB05AC2A1237FE000D2E03 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		10DB05B02A123B65000D2E03 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10DB05AF2A123B65000D2E03 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		10D30A8B29FA76C800828A8D /* OfflineStorage.xcdatamodeld */ = {

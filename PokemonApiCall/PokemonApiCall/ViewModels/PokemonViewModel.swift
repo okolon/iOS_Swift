@@ -11,6 +11,7 @@ class PokemonViewModel : ObservableObject{
    @Published var pokeList = PokemonData(data: [], page: 0, pageSize: 0, count: 0, totalCount: 0)
     
     
+    
     var manager: NetworkableProtocol
     
     init(manager:NetworkableProtocol) {

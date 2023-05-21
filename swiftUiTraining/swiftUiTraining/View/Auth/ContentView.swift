@@ -65,23 +65,7 @@ struct ContentView: View {
                             .foregroundColor(.black)
                             .fontWeight(.semibold)
                         
-                        if loginViewModel.biometricType() != .none {
-                            Button {
-                                loginViewModel.authenticationUser(email: emailiD, password: password) {result in
-                                    switch result {
-                                    case .success(_):
-                                        print("Successful login")
-                                    case .failure(_):
-                                        print("Login Failed")
-                                    }
-                                }
-                            } label: {
-                                Image(systemName: "faceid")
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Color .white)
-                            }
-                        }
+                        
                         
                         Button {
                                 if loginViewModel.validLogin(emailField: emailiD, passwordField: password) {
@@ -100,13 +84,31 @@ struct ContentView: View {
                             .padding()
                             .tint(.black)
                         
+                        if loginViewModel.biometricType() != .none {
+                            Button {
+                                loginViewModel.authenticationUser(email: emailiD, password: password) {result in
+                                    switch result {
+                                    case .success(_):
+                                        print("Successful login")
+                                    case .failure(_):
+                                        print("Login Failed")
+                                    }
+                                }
+                            } label: {
+                                Image(systemName: "faceid")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .foregroundColor(Color .white)
+                            }
+                        }
+                        
                     }
                     Group{
                         Text(signUpPrompt)
                             .foregroundColor(.black)
                             .font(.callout)
                             .fontWeight(.light)
-                            .padding(.top, 40)
+                            .padding(.top, 30)
                             .padding(.trailing, 50)
                             .padding(.leading, 50)
                         

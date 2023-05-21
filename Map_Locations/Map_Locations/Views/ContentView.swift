@@ -12,6 +12,8 @@ import CoreLocation
 struct ContentView: View {
     
     @StateObject var viewModel = LocationManager()
+    @EnvironmentObject var coordinator: Coordinator
+    let cuisines = ["Kebab", "Chinese", "Turkish", "Fish & Chips", "Mexican", "Japanese"]
     
     @State var staticRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.5, longitude: -0.083321), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     
@@ -26,26 +28,45 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationStack {
+        ZStack {
+            Color.init(red: 246 / 255, green: 117 / 255, blue: 113 / 255)
+                .ignoresSafeArea()
             VStack {
-                ZStack {
+                ScrollView(.horizontal) {
+                    LazyHGrid(rows: [GridItem()]) {
+                        ForEach(cuisines, id: \.self) { item in
+                                Text("\(item)")
+                                    .frame(width: 120, height: 60)
+                                    .background(Color.init(red: 246 / 255, green: 117 / 255, blue: 113 / 255))
+                                    .cornerRadius(10)
+                                    .foregroundColor(.white)
+                                    .fontWeight(.bold)
+                                    .overlay (
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .frame(width: 100, height: 50)
+                                    )
+                        }
+                    }
+                }.frame(height: 60)
+                    .padding(.trailing, 10)
+                    .padding(.leading, 10)
                     if let currentRegion = region {
-    //                    Map(coordinateRegion: currentRegion)
                         Map(coordinateRegion: currentRegion, annotationItems: [Places(name: "Old Street", coordinates: CLLocationCoordinate2D(latitude: 51.5, longitude: -0.0075))]) { pin in
                             
                             MapAnnotation(coordinate: pin.coordinates) {
-                                NavigationLink {
-                                    DetailView(place: pin)
+                                Button {
+                                    coordinator.goToDetailScreen()
                                 } label: {
                                     PinImage()
                                         .frame(width: 100, height: 100)
                                 }
                             }
                         }
+                        .ignoresSafeArea()
+                        .padding(.trailing, 10)
+                        .padding(.leading, 10)
                     }
-                }
             }
-            .ignoresSafeArea()
         }
     }
 }

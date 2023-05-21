@@ -11,7 +11,8 @@ import SwiftUI
 struct Map_LocationsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationPage().environmentObject(Coordinator())
+//            ContentView()
         }
     }
 }

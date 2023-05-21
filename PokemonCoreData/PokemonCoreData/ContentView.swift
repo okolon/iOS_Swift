@@ -17,7 +17,7 @@ struct ContentView: View {
         NavigationStack{
             TabView {
                 RoundedRectangle(cornerRadius: 30)
-                    .fill(Color.init(red: 246 / 255, green: 117 / 255, blue: 113 / 255))
+                    .fill(Color.black)
                     .ignoresSafeArea()
                     .overlay (
                         VStack {
@@ -31,7 +31,7 @@ struct ContentView: View {
                         }
                     )
                 RoundedRectangle(cornerRadius: 30)
-                    .fill(Color.init(red: 246 / 255, green: 117 / 255, blue: 113 / 255))
+                    .fill(Color.black)
                     .ignoresSafeArea()
                     .overlay (
                         VStack {
@@ -52,7 +52,7 @@ struct ContentView: View {
                         }
                     )
                 RoundedRectangle(cornerRadius: 30)
-                    .fill(Color.init(red: 246 / 255, green: 117 / 255, blue: 113 / 255))
+                    .fill(Color.black)
                     .ignoresSafeArea()
                     .overlay (
                         VStack {
